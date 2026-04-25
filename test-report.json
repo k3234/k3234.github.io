@@ -1,0 +1,38 @@
+{
+  "testSummary": {
+    "totalTests": 100,
+    "passedTests": 100,
+    "failedTests": 0,
+    "passRate": "100.00%"
+  },
+  "performanceMetrics": {
+    "login": {
+      "averageTime": "1.27ms",
+      "minTime": "0ms",
+      "maxTime": "32ms"
+    },
+    "getContent": {
+      "averageTime": "0.71ms",
+      "minTime": "0ms",
+      "maxTime": "3ms"
+    },
+    "getExams": {
+      "averageTime": "0.55ms",
+      "minTime": "0ms",
+      "maxTime": "2ms"
+    },
+    "submitExam": {
+      "averageTime": "0.94ms",
+      "minTime": "0ms",
+      "maxTime": "7ms"
+    }
+  },
+  "errors": [],
+  "recommendations": [
+    "优化登录响应时间",
+    "增加错误处理和用户提示",
+    "优化数据库查询性能",
+    "添加更多的测试用例覆盖边缘情况",
+    "实现更详细的日志记录"
+  ]
+}

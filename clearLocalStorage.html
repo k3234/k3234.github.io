@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>清除本地存储</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+    }
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #f0f0f0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>清除本地存储中的用户信息</h1>
+  <p>点击下方按钮清除本地存储中的用户信息，包括张三的信息。</p>
+  <button class="btn" onclick="clearStorage()">清除本地存储</button>
+  <div class="result" id="result"></div>
+
+  <script>
+    function clearStorage() {
+      // 清除localStorage中的用户信息
+      localStorage.removeItem('currentUser');
+      localStorage.removeItem('token');
+      
+      // 显示清除结果
+      const result = document.getElementById('result');
+      result.innerHTML = `
+        <h3>清除结果</h3>
+        <p>本地存储已清除</p>
+        <p>当前localStorage内容: ${JSON.stringify(localStorage)}</p>
+        <p>张三的信息已从本地存储中清除</p>
+      `;
+      
+      console.log('本地存储已清除');
+      console.log('当前localStorage内容:', localStorage);
+    }
+  </script>
+</body>
+</html>
