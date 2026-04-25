@@ -1,0 +1,53 @@
+{
+  "totalUsers": 1000,
+  "totalInteractions": 100000,
+  "knowledgePointsCount": 20,
+  "questionsCount": 9,
+  "contentDistribution": {
+    "knowledge": 49757,
+    "question": 50243
+  },
+  "actionDistribution": {
+    "view": 33327,
+    "attempt": 33332,
+    "answer": 33341
+  },
+  "answerResults": {
+    "correct": 16625,
+    "incorrect": 16716
+  },
+  "questionsErrorRate": {
+    "math-q1": 83.7953091684435,
+    "math-q2": 84.08394246639944,
+    "math-q3": 82.92043830395426,
+    "physics-q1": 84.21174831669376,
+    "physics-q2": 82.95911132120067,
+    "chemistry-q1": 83.02116273412796,
+    "chemistry-q2": 84.04835269021095,
+    "biology-q1": 82.62342691190707,
+    "biology-q2": 83.32933557207963
+  },
+  "knowledgePointsErrorRate": {
+    "math-1": 83.7953091684435,
+    "math-2": 84.08394246639944,
+    "math-3": 0,
+    "math-4": 82.92043830395427,
+    "math-5": 0,
+    "physics-1": 84.21174831669376,
+    "physics-2": 82.95911132120067,
+    "physics-3": 0,
+    "physics-4": 0,
+    "physics-5": 0,
+    "chemistry-1": 83.02116273412796,
+    "chemistry-2": 0,
+    "chemistry-3": 0,
+    "chemistry-4": 0,
+    "chemistry-5": 84.04835269021095,
+    "biology-1": 0,
+    "biology-2": 82.62342691190707,
+    "biology-3": 83.32933557207963,
+    "biology-4": 0,
+    "biology-5": 0
+  },
+  "correctRate": 49.86353138778081
+}
